@@ -21,7 +21,6 @@ $msg .= "От кого:".$username."</p>\r\n";
 $msg .= "Сайт:".$usertel."</p>\r\n";
 //$msg .= "";
 
-header('Location: http://i-7-phone.com/send.php?send=true');
 if (isset($_GET['send']) && $_GET['send'] == 'true') echo 'все ок';
 
 mail($sendto, $subject, $headers, $msg); 
